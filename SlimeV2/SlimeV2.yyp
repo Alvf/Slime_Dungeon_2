@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "2559b1e8-a568-4e4d-be77-298f97fcea6d",
+            "Value": {
+                "id": "ec86592b-2335-43d9-ba85-3b8b22c32323",
+                "resourcePath": "objects\\obj_encounter_Hero\\obj_encounter_Hero.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "27ea371e-ae20-467e-bd99-e7ddd72fddd8",
             "Value": {
                 "id": "5044bd3a-ef8c-4f24-8007-3863c38ca7e4",
@@ -151,6 +159,14 @@
             }
         },
         {
+            "Key": "493ab69a-3483-4992-b6ad-92a1f4ea3b44",
+            "Value": {
+                "id": "056763f2-809c-458a-ad7d-bd807b7f1ccd",
+                "resourcePath": "sprites\\sprite12\\sprite12.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4aac3cc2-6a43-4cf0-ae89-4d19e2e89a98",
             "Value": {
                 "id": "a19e59fe-263b-44a0-9081-a326a6c06c95",
@@ -164,6 +180,14 @@
                 "id": "2ee53e0b-1633-4edf-ba33-02998789520c",
                 "resourcePath": "views\/4b5186fb-d1f7-4ae5-a981-301088e48097.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "50cfc23a-ddbc-44a4-8233-c9acd1865d7b",
+            "Value": {
+                "id": "b9c058c8-8137-4664-932a-7202bbbf515f",
+                "resourcePath": "rooms\\rm_encounter\\rm_encounter.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -219,6 +243,14 @@
             "Value": {
                 "id": "ced8d652-e78e-44d1-9208-399758993874",
                 "resourcePath": "objects\/obj_battle_button\/obj_battle_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7138d06b-7687-4da0-8834-fe650c7bbc52",
+            "Value": {
+                "id": "0f922068-ed2e-4c23-a093-21dd4e66bf2e",
+                "resourcePath": "objects\\obj_encounter_Slime\\obj_encounter_Slime.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -316,6 +348,14 @@
                 "id": "aa1abb99-2ba7-4314-ab07-cd69f271b2aa",
                 "resourcePath": "options\/linux\/options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a98ffc72-331d-48c3-ae7d-93501a8e5283",
+            "Value": {
+                "id": "0f13a06f-e69f-4555-84a3-c3e054086ee6",
+                "resourcePath": "sounds\\snd_encounter_music\\snd_encounter_music.yy",
+                "resourceType": "GMSound"
             }
         },
         {

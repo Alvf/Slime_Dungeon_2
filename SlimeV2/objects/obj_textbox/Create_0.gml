@@ -27,8 +27,8 @@ name_y = box_y - name_height;
 
 portrait_index = 0;
 
-text = "this some dialogue this some dialogue this some dialogue this some dialogue this some dialogue this some dialogue this some dialogue this some dialogue this some dialogue"
-name = "Someone"
+text = "Nani?!?"
+name = "Deep Throat"
 
 text_col = c_black;
 name_col = c_black;
