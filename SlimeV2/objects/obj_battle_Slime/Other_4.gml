@@ -5,3 +5,5 @@ cell_y = obj_Control.slime_cell_y;
 
 x = cell_x*grid_size;
 y = cell_y*grid_size;
+
+audio_play_sound(snd_battle_music, 10000, 1);

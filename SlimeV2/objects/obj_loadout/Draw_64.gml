@@ -13,3 +13,5 @@ for (i = 0; i < num_tiles; i+=1){
 	draw_sprite(spr_loadout, i, i * 128, 0);
 	draw_text(i * 128, 110, items[i]);
 }
+
+draw_sprite(Sprite_Highlight, 1, (obj_build_Slime.current_tool-1) * 128, 0);
