@@ -3,3 +3,5 @@
 obj_Control.slime_cell_x = cell_x;
 obj_Control.slime_cell_y = cell_y;
 show_debug_message(string(obj_Control.slime_cell_x));
+
+audio_stop_sound(snd_bg_music);

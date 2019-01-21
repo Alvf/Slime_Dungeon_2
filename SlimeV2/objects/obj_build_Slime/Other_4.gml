@@ -5,3 +5,5 @@ x = cell_x * grid_size;
 cell_y = obj_Control.slime_cell_y;
 y = cell_y * grid_size;
 show_debug_message(string(x));
+
+audio_play_sound(snd_bg_music, 10000, 1);
