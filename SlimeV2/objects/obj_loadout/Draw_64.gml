@@ -5,8 +5,8 @@ var c = c_black;
 draw_set_colour(c);
 
 items[0] = "inf"
-items[1] = string(obj_build_Slime.rock);
-items[2] = string(obj_build_Slime.gold);
+items[1] = string(obj_resources.rock);
+items[2] = string(obj_resources.gold);
 
 var i;
 for (i = 0; i < num_tiles; i+=1){

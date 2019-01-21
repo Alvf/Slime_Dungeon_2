@@ -4,12 +4,6 @@
 // This decides what the player places when they click
 current_tool = 1;
 
-// This is how much rock they have left
-rock = 4;
-gold = 1;
-
-treasure = pointer_null;
-
 // Change this one to change how fast the character moves
 move_sp = 4; // Movement speed 
 
@@ -17,7 +11,9 @@ move_sp = 4; // Movement speed
 hsp = 0; // Horizontal movement speed
 vsp = 0; // Vertical movement speed 
 
-cell_x = 0; cell_y = 0;
+// Slime's x and y position in the grid (0,0) (index top-left)
+cell_x = 0; 
+cell_y = 0;
 
 mouse_in_valid_pos = false;
 

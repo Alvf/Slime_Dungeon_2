@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_battle_Slime",
     "eventList": [
-        
+        {
+            "id": "76e5b82c-3df0-4e89-854c-57b01baddbc6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 66,
+            "eventtype": 9,
+            "m_owner": "b2b7afab-c155-4000-968a-4023b8d6e4b5"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

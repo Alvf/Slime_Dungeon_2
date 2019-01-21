@@ -12,6 +12,10 @@ display_set_gui_size(global.game_width, global.game_height)
 // If it's false, this will just create a box around the edge.
 load_from_tilemap = true;
 
+//Slime cell positions
+slime_cell_x = 1;
+slime_cell_y = 1;
+
 map_grid = ds_grid_create(grid_width,grid_height);
 
 tile_layer_id = layer_get_id("tile_map");

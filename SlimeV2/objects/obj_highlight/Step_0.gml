@@ -15,13 +15,13 @@ if(obj_build_Slime.mouse_in_valid_pos){
 }
 
 if(obj_build_Slime.current_tool == tool_wall){
-	if (obj_build_Slime.m_cell == ds_floor && obj_build_Slime.rock > 0){
+	if (obj_build_Slime.m_cell == ds_floor && obj_resources.rock > 0){
 		image_index = overlay_green;
 	} else {
 		image_index = overlay_red;
 	}
 } else if(obj_build_Slime.current_tool == 3){
-	if (obj_build_Slime.m_cell == ds_floor && obj_build_Slime.gold > 0){
+	if (obj_build_Slime.m_cell == ds_floor && obj_resources.gold > 0){
 		image_index = overlay_green;
 	} else {
 		image_index = overlay_red;
