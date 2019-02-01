@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Set build slime position
 // You can write your code in this editor
 cell_x = obj_Control.slime_cell_x;
 x = cell_x * grid_size;
