@@ -423,14 +423,6 @@
             }
         },
         {
-            "Key": "cdd7131a-7d79-44ab-9add-76ef4f7be5d9",
-            "Value": {
-                "id": "298208b4-b3c3-42d3-a0fd-6065dcc69e96",
-                "resourcePath": "objects\/obj_battle_grid\/obj_battle_grid.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "d0ee832f-5385-46bf-ac31-299b84bdbfcc",
             "Value": {
                 "id": "d27b2631-df0a-475d-9115-41f876b493f2",

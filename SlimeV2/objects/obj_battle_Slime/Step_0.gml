@@ -51,9 +51,9 @@ my_cell = clamp(floor(mouse_y / grid_size), 0, grid_height - 1);
 m_cell = ds_grid_get(obj_Control.map_grid, mx_cell, my_cell);		
 
 x_cell = floor(x / grid_size);
-cell_x = x_cell;
+obj_Control.slime_cell_x = x_cell;
 y_cell = floor(y / grid_size);
-cell_y = y_cell;
+obj_Control.slime_cell_y = y_cell;
 
 if(abs(mx_cell - x_cell) <= 1 
  && abs(my_cell - y_cell) <= 1 
