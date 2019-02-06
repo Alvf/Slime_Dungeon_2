@@ -16,4 +16,5 @@ vpos_h = camera_get_view_height(view_camera[0]) * 0.5;
 // keeps track of the slime has been clicked on
 is_clicked = false;
 
-// Slime's 
+// Slime's default allowed grid movements
+slime_movement = 5;

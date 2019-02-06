@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "26e08913-c295-4bcc-bed7-c400164918f7",
+            "Value": {
+                "id": "c5a7785d-3ad6-40b4-84fc-5e96959de050",
+                "resourcePath": "views\\26e08913-c295-4bcc-bed7-c400164918f7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "27ea371e-ae20-467e-bd99-e7ddd72fddd8",
             "Value": {
                 "id": "5044bd3a-ef8c-4f24-8007-3863c38ca7e4",
@@ -131,6 +139,14 @@
             "Value": {
                 "id": "d7d1f965-1421-4ff3-b15f-a1cbe345ddce",
                 "resourcePath": "views\/378df966-e76c-40aa-aeca-e5ffc06909b9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3d21ff47-04da-4423-8599-ae9b186a1789",
+            "Value": {
+                "id": "106ee597-6fdc-4329-aa0e-1ca7f80e5c00",
+                "resourcePath": "views\\3d21ff47-04da-4423-8599-ae9b186a1789.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -231,14 +247,6 @@
             }
         },
         {
-            "Key": "6fe6d055-e2b5-4993-956c-63995296279e",
-            "Value": {
-                "id": "ced8d652-e78e-44d1-9208-399758993874",
-                "resourcePath": "objects\/obj_battle_button\/obj_battle_button.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7138d06b-7687-4da0-8834-fe650c7bbc52",
             "Value": {
                 "id": "0f922068-ed2e-4c23-a093-21dd4e66bf2e",
@@ -300,6 +308,14 @@
                 "id": "7481e25f-79ff-4145-8311-160a97a7d267",
                 "resourcePath": "sounds\/snd_bg_music\/snd_bg_music.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "8eae823f-83f7-41d1-b5e3-88b43973c89c",
+            "Value": {
+                "id": "0716e34e-dbb0-44e6-9c67-4e9ded4a6d9d",
+                "resourcePath": "objects\\obj_highlight_battle\\obj_highlight_battle.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -372,6 +388,14 @@
                 "id": "e94fc536-3d8d-4820-a438-fddb59862e2e",
                 "resourcePath": "objects\/obj_battle_Slime\/obj_battle_Slime.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b33e0b93-a080-4181-83c9-35e0b736c7d3",
+            "Value": {
+                "id": "e08dcc91-9e63-4526-a84f-3ea2557384ce",
+                "resourcePath": "scripts\\scr_pathfinding\\scr_pathfinding.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -497,7 +521,8 @@
     ],
     "script_order": [
         "d0ee832f-5385-46bf-ac31-299b84bdbfcc",
-        "ab409fff-278f-47e0-8f65-808629619c86"
+        "ab409fff-278f-47e0-8f65-808629619c86",
+        "b33e0b93-a080-4181-83c9-35e0b736c7d3"
     ],
     "tutorial": ""
 }

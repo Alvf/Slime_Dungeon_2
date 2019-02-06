@@ -86,3 +86,4 @@ if(keyboard_check(vk_shift)){
 camera_set_view_pos(view_camera[0],
 	clamp( new_x, 0, room_width - vpos_w * 2 ),
     clamp( new_y, 0, room_height - vpos_h * 2 ));
+
