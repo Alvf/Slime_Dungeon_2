@@ -9,6 +9,7 @@ if(mouse_in_valid_pos){
 		if(m_cell == 1){
 			// Placing obj_resources.rock
 			ds_grid_set(obj_Control.map_grid, mx_cell, my_cell, ds_wall);
+			mp_grid_add_cell(obj_Control.path_grid,mx_cell,my_cell);
 			
 			var tile_below = ds_grid_get(obj_Control.map_grid, mx_cell, my_cell + 1);
 			
@@ -40,11 +41,13 @@ if(mouse_in_valid_pos){
 	
 			tilemap_set(obj_Control.tile_id, 1, mx_cell, my_cell);
 		}
+		mp_grid_clear_cell(obj_Control.path_grid,mx_cell,my_cell);
 	}else if (current_tool == 3) {
 		if(obj_resources.gold > 0 && m_cell == 1){
 			obj_resources.gold--;
 			ds_grid_set(obj_Control.map_grid, mx_cell, my_cell, 3);
 			tilemap_set(obj_Control.tile_id, 3, mx_cell, my_cell);
+			mp_grid_add_cell(obj_Control.path_grid,mx_cell,my_cell);
 		}	
 	}
 	

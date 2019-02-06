@@ -18,3 +18,4 @@ is_clicked = false;
 
 // Slime's default allowed grid movements
 slime_movement = 5;
+slime_path = path_add();
