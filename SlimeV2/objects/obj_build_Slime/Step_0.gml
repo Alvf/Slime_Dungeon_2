@@ -86,3 +86,14 @@ if(keyboard_check(vk_shift)){
 camera_set_view_pos(view_camera[0],
 	clamp( new_x, 0, room_width - vpos_w * 2 ),
     clamp( new_y, 0, room_height - vpos_h * 2 ));
+
+
+//find the coordinate of the gold
+	for(var i=0;i<grid_width;i++){
+		for(var j=0;j<grid_height;j++){
+			if(ds_grid_get(obj_Control.map_grid,i,j)==ds_gold){
+				gold_x = i;
+				gold_y = j;
+			}
+		}
+	}

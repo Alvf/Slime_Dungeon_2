@@ -21,3 +21,9 @@
 //draw_set_colour(c_green);
 //draw_rectangle(64 * (current_tool - 1), 0, 64 * current_tool, 64, true);
 //draw_rectangle(64 * (current_tool - 1) + 1, 1, 64 * current_tool - 1, 64 - 1, true);
+
+
+if(gold_placed){
+	mp_grid_path(obj_Control.path_grid,gold_path,gold_x*grid_size,gold_y*grid_size,19*grid_size,6*grid_size,false);
+	draw_path(gold_path,gold_x*grid_size,gold_y*grid_size,false);
+}

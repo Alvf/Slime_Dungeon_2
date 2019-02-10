@@ -29,11 +29,4 @@ for(var i = 0; i < grid_width; i++){
 }
 
 //create a mp_grid for pathfinding based on sprite grid
-path_grid = mp_grid_create(-grid_size/2,-grid_size/2,grid_width,grid_height,grid_size,grid_size);
-for(i = 0;i<grid_width;i++){
-	for(j=0;j<grid_height;j++){
-		if(ds_grid_get(map_grid,i,j)!=ds_floor){
-			mp_grid_add_cell(path_grid,i,j);
-		}
-	}
-}
+script_execute(scr_ds_grid_to_mp_grid);

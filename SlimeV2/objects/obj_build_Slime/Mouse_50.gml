@@ -40,6 +40,7 @@ if(mouse_in_valid_pos){
 			ds_grid_set(obj_Control.map_grid, mx_cell, my_cell, 1);
 	
 			tilemap_set(obj_Control.tile_id, 1, mx_cell, my_cell);
+			gold_placed = false;
 		}
 		mp_grid_clear_cell(obj_Control.path_grid,mx_cell,my_cell);
 	}else if (current_tool == 3) {
@@ -47,7 +48,7 @@ if(mouse_in_valid_pos){
 			obj_resources.gold--;
 			ds_grid_set(obj_Control.map_grid, mx_cell, my_cell, 3);
 			tilemap_set(obj_Control.tile_id, 3, mx_cell, my_cell);
-			mp_grid_add_cell(obj_Control.path_grid,mx_cell,my_cell);
+			gold_placed = true;
 		}	
 	}
 	
