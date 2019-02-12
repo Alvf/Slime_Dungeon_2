@@ -97,3 +97,5 @@ camera_set_view_pos(view_camera[0],
 			}
 		}
 	}
+	
+	mp_grid_path(obj_Control.path_grid,gold_path,gold_x*grid_size,gold_y*grid_size,19*grid_size,6*grid_size,false);

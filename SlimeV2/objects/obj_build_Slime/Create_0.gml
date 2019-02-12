@@ -31,3 +31,5 @@ vpos_h = camera_get_view_height(view_camera[0]) * 0.5;
 gold_placed = false;
 
 gold_path = path_add();
+gold_x = -1;
+gold_y = -1;

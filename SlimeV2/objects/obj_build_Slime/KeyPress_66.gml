@@ -9,9 +9,6 @@ if(!gold_placed){
 }
 else{
 	
-	show_debug_message(string(gold_x)+" "+string(gold_y));
-	show_debug_message(string(17*grid_size)+" "+string(6*grid_size));
-	
 	if(mp_grid_path(obj_Control.path_grid,gold_path,gold_x*grid_size,gold_y*grid_size,19*grid_size,6*grid_size,false)){
 		room_goto(rm_battle);
 	audio_pause_sound(snd_bg_music);
