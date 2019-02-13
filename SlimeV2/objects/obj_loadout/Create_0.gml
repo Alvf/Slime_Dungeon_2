@@ -1,7 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 square_width = 64;
 square_height = 64;
 num_tiles = 3;
 
 items = [];
+
+rock = 16
+gold = 1
+current_tool = tool_break
+gold_placed = false

@@ -1,5 +1,14 @@
-/// @description Insert description here
+/// @description Setup
 // You can write your code in this editor
-sprite_index = Sprite_Skeleton
+
+// This is set so the save manager can find it
 save = true 
-show_debug_message("build monster id " + string(id))
+
+// so, like, this has to be a factor of grid_size
+move_sp = 4;
+
+hsp = 0;
+vsp = 0;
+
+x_cell = floor(x / grid_size);
+y_cell = floor(y / grid_size);

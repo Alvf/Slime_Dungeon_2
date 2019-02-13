@@ -14,17 +14,18 @@ if(room == rm_battle || room == rm_build){
 		}
 	}
 
-	ini_open("temp.ini")
+	ini_open("save.ini")
 	ini_write_real("meta", "numMonsters", ds_list_size(save_list))
 	for(var i = 0; i < ds_list_size(save_list); i++){
 		var section = "monster" + string(i)
 		var monster = ds_list_find_value(save_list, i)
 	//	show_debug_message("Monster ID " + (monster))
-		ini_write_real(section, "x", monster.x)
-		ini_write_real(section, "y", monster.y)
+		ini_write_real(section, "x", floor(monster.x / grid_size) * grid_size)
+		ini_write_real(section, "y", floor(monster.y / grid_size) * grid_size)
 		ini_write_real(section, "spr", monster.sprite_index);
 	}
 	ini_close()
+	
 
 	show_debug_message("SAVE LIST");
 	show_debug_message(ds_list_write(save_list));

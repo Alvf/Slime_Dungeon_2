@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-//x += random_range(-30, 30)
-//y += random_range(-30, 30)
+gold_path = path_add()
+gold_x = 0
+gold_y = 0
