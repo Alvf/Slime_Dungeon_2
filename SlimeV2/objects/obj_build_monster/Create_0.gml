@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // This is set so the save manager can find it
-save = true 
+save = true;
 
 // so, like, this has to be a factor of grid_size
 move_sp = 4;

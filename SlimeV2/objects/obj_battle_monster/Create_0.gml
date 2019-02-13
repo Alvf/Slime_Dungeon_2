@@ -8,7 +8,7 @@ move_sp = 4
 hsp = 0
 vsp = 0
 
-// keeps track of the slime has been clicked on
+// keeps track if the monster has been clicked on
 is_clicked = false;
 
 // Slime's default allowed grid movements
