@@ -14,13 +14,13 @@ if(x_grid>grid_width-1||x_grid<0||y_grid>grid_height-1||y_grid<0){
 	return;
 }
 //always stop if you hit not-ground
-else if(ds_grid_get(obj_Control.map_grid,x_grid,y_grid) != tile_floor)
+else if(ds_grid_get(obj_grid.map_grid,x_grid,y_grid) != tile_floor)
 {
 	//draw a red tint square and escape
 	draw_sprite_ext(Sprite_Highlight,2,x_grid*grid_size,y_grid*grid_size,1,1,0,c_white,0.4);
 }
-//always stop if there's an enemy
-else if(place_meeting(x_grid*grid_size,y_grid*grid_size,obj_battle_Hero)){
+//always stop if there's an enemy or monster
+else if(place_meeting(x_grid*grid_size,y_grid*grid_size,obj_battle_Hero) || place_meeting(x_grid*grid_size,y_grid*grid_size,obj_battle_monster)){
 	draw_sprite_ext(Sprite_Highlight,3,x_grid*grid_size,y_grid*grid_size,1,1,0,c_white,0.4);
 }
 //if you don't have any movement left, draw as walkable (already looked for not-floor)

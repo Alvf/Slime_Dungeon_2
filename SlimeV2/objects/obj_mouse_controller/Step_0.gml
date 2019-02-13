@@ -16,4 +16,4 @@ if(abs(x_cell - player.x_cell) <= 1
 	 mouse_in_valid_pos = false;
  }
  
-tile = ds_grid_get(obj_Control.map_grid, x_cell, y_cell)
+tile = ds_grid_get(obj_grid.map_grid, x_cell, y_cell)

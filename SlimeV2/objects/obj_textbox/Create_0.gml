@@ -16,8 +16,8 @@ namebox = spr_namebox;
 name_width = sprite_get_width(namebox);
 name_height = sprite_get_height(namebox);
 
-port_x = (global.game_width - box_width - port_width) * 0.5
-port_y = (global.game_height*0.98 - port_height);
+port_x = (game_width - box_width - port_width) * 0.5
+port_y = (game_height*0.98 - port_height);
 
 box_x = port_x + port_width;
 box_y = port_y;

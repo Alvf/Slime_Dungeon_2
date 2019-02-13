@@ -21,13 +21,13 @@ if (floor(x mod grid_size) == 0) and
 	hsp = 0;
 	vsp = 0;
 	
-	if ((move_x > 0 && ds_grid_get(obj_Control.map_grid, x_cell + 1, y_cell) != 1)
-		|| (move_x < 0 && ds_grid_get(obj_Control.map_grid, x_cell - 1, y_cell) != 1)) {
+	if ((move_x > 0 && ds_grid_get(obj_grid.map_grid, x_cell + 1, y_cell) != 1)
+		|| (move_x < 0 && ds_grid_get(obj_grid.map_grid, x_cell - 1, y_cell) != 1)) {
 		move_x = 0;
 	}
 	
-	if ((move_y > 0 && ds_grid_get(obj_Control.map_grid, x_cell, y_cell + 1) != 1)
-		|| (move_y < 0 && ds_grid_get(obj_Control.map_grid, x_cell, y_cell - 1) != 1)) {
+	if ((move_y > 0 && ds_grid_get(obj_grid.map_grid, x_cell, y_cell + 1) != 1)
+		|| (move_y < 0 && ds_grid_get(obj_grid.map_grid, x_cell, y_cell - 1) != 1)) {
 		move_y = 0;
 	}
 	
