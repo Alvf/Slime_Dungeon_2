@@ -47,4 +47,7 @@ if(cell_type == ds_wall){
 	}
 } else if (cell_type == ds_gold){
 	tilemap_set(tilemap_id, tile_gold, cell_x, cell_y);
+} else if (cell_type == ds_monster){
+	// for debug reasons
+	//tilemap_set(tilemap_id, tile_gold, cell_x, cell_y);
 }

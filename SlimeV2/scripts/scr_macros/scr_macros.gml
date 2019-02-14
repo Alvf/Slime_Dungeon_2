@@ -1,3 +1,4 @@
+#macro ds_monster 0
 #macro ds_wall 4
 #macro ds_floor 1 
 #macro ds_gold 3
