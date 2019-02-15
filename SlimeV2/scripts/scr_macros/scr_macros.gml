@@ -1,3 +1,4 @@
+#macro ds_monster 0
 #macro ds_wall 4
 #macro ds_floor 1 
 #macro ds_gold 3
@@ -18,3 +19,7 @@
 #macro tile_floor 1
 #macro tile_wall_front 4 
 #macro tile_wall_top 2
+#macro tile_gold 3
+
+#macro game_width 1280
+#macro game_height 896

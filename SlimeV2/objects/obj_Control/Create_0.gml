@@ -4,16 +4,10 @@
 // Fix VSYNC issues
 display_reset(0, true);
 
-global.game_width = 1280
-global.game_height = 896
-display_set_gui_size(global.game_width, global.game_height)
+//global.game_width = 1280
+//global.game_height = 896
+//display_set_gui_size(global.game_width, global.game_height)
 
-// Set this to true to load from the tilemap in the gamemaker editor.
-// If it's false, this will just create a box around the edge.
-
-//Slime cell positions
-slime_cell_x = 1;
-slime_cell_y = 1;
 
 map_grid = ds_grid_create(grid_width,grid_height);
 

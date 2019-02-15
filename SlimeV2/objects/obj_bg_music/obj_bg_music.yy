@@ -2,7 +2,7 @@
     "id": "532b1263-90ee-4d74-9444-a1d8c127147d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_build_music",
+    "name": "obj_bg_music",
     "eventList": [
         {
             "id": "f71e6158-2a51-4b2f-8c95-46244532b74b",
@@ -28,7 +28,7 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

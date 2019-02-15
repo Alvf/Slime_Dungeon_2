@@ -12,3 +12,11 @@ vsp = 0;
 
 x_cell = floor(x / grid_size);
 y_cell = floor(y / grid_size);
+
+next_x_cell = x_cell
+next_y_cell = y_cell
+
+/*obj_grid.cell_x = x_cell
+obj_grid.cell_y = y_cell
+obj_grid.cell_type = ds_monster 
+update_grids*/
