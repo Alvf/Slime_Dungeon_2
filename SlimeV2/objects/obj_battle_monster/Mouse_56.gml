@@ -1,11 +1,11 @@
-/// @description Teleport Slime
+/// @description Move monster
 
 
 //What tile is the mouse on?
 mouse_tile_x = floor(mouse_x/grid_size);
 mouse_tile_y = floor(mouse_y/grid_size);
 
-//go into battle with enemniees
+//go into battle with enemies
 if(position_meeting(mouse_x,mouse_y,obj_battle_Hero)
 	&& (abs(floor(x/grid_size)-floor(obj_battle_Hero.x/grid_size))==1
 		^^ abs(floor(y/grid_size)-floor(obj_battle_Hero.y/grid_size))==1)){

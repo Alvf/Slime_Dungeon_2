@@ -25,3 +25,5 @@ if(room == rm_build || room == rm_battle){
 	}
 	
 } 
+if(room == rm_encounter){
+}
