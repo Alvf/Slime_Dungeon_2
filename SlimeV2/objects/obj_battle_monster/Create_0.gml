@@ -14,3 +14,5 @@ is_clicked = false;
 // Slime's default allowed grid movements
 monster_movement = 5;
 monster_path = path_add();
+
+in_battle = 0;

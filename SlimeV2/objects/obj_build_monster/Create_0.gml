@@ -20,3 +20,5 @@ next_y_cell = y_cell
 obj_grid.cell_y = y_cell
 obj_grid.cell_type = ds_monster 
 update_grids*/
+
+in_battle = 0;

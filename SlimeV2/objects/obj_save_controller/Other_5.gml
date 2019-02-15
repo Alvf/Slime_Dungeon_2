@@ -23,6 +23,7 @@ if(room == rm_battle || room == rm_build){
 		ini_write_real(section, "x", floor(monster.x / grid_size) * grid_size)
 		ini_write_real(section, "y", floor(monster.y / grid_size) * grid_size)
 		ini_write_real(section, "spr", monster.sprite_index);
+		ini_write_real(section, "in battle", monster.in_battle);
 	}
 	ini_close()
 	
@@ -31,4 +32,13 @@ if(room == rm_battle || room == rm_build){
 	show_debug_message(ds_list_write(save_list));
 
 	ds_list_destroy(save_list);
+}
+else if (room = rm_encounter){
+	ini_open("save.ini");
+	var length = ini_read_real("meta","numMonsters",0);
+	for(var i =0;i<length;i++){
+		var section= "monster"+string(i);
+		ini_write_real(section,"in battle", 0);
+	}
+	ini_close();
 }

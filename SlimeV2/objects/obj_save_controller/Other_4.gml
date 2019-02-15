@@ -19,11 +19,29 @@ if(room == rm_build || room == rm_battle){
 		var inst = instance_create_layer(monster_x, monster_y, "Instances", objType)
 		with(inst){
 			inst.sprite_index = ini_read_real(section, "spr", Peasant);
+			ini_write_real(section,"in battle",inst.in_battle);
 		}
 	
 		show_debug_message("loading object at " + string(x) + ", " + string(y))
 	}
 	
 } 
-if(room == rm_encounter){
+else if(room == rm_encounter){
+	var objType = obj_encounter_monster;
+	ini_open("save.ini");
+	var numMonsters = ini_read_real("meta","numMonsters",0);
+	for(var i=0;i<numMonsters;i++){
+		var section = "monster"+string(i);
+		var inbattle = ini_read_real(section,"in battle",0);
+			if(inbattle ==1){
+				show_debug_message("found combatant!");
+				var inst = instance_create_layer(190,400,"instances",objType);
+				with(inst){
+				inst.sprite_index = ini_read_real(section,"spr",Peasant);
+				inst.image_xscale = 2;
+				inst.image_yscale = 2;
+				}
+			}
+	}	
+			
 }
