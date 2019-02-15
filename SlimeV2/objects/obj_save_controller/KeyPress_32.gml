@@ -3,7 +3,7 @@
 if(room == rm_build){
 	rand_x = floor(random_range(0,512)/grid_size);
 	rand_y = floor(random_range(0,512)/grid_size);
-	while(ds_grid_get(obj_Control.map_grid,rand_x,rand_y)!=ds_floor){
+	while(ds_grid_get(obj_grid.map_grid,rand_x,rand_y)!=ds_floor){
 		rand_x = floor(random_range(0,512)/grid_size);
 	rand_y = floor(random_range(0,512)/grid_size);
 	}
