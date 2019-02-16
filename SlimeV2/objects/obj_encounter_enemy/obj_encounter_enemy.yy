@@ -1,8 +1,8 @@
 {
-    "id": "2559b1e8-a568-4e4d-be77-298f97fcea6d",
+    "id": "b6350dc5-8019-4c4d-a27e-8bec17c25174",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_encounter_Hero",
+    "name": "obj_encounter_enemy",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "f739f60d-b52f-4112-8457-f6d34b4e919f",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

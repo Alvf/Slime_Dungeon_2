@@ -15,4 +15,7 @@ is_clicked = false;
 monster_movement = 5;
 monster_path = path_add();
 
+//Monster's moves left per turn
+monster_endurance = 5;
+
 in_battle = 0;

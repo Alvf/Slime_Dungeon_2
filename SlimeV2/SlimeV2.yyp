@@ -111,14 +111,6 @@
             }
         },
         {
-            "Key": "2559b1e8-a568-4e4d-be77-298f97fcea6d",
-            "Value": {
-                "id": "ec86592b-2335-43d9-ba85-3b8b22c32323",
-                "resourcePath": "objects\/obj_encounter_Hero\/obj_encounter_Hero.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "26b343e8-9a8a-4dc8-9bb9-ba9f28ac9691",
             "Value": {
                 "id": "61146226-451f-411f-b90a-e4f2c7efe251",
@@ -487,6 +479,14 @@
             }
         },
         {
+            "Key": "afe1ccac-e60c-41cd-b8c5-b8d207211aaf",
+            "Value": {
+                "id": "8ad729fe-2ea4-4836-b662-4ef0e3be50c2",
+                "resourcePath": "objects\\obj_TurnController\\obj_TurnController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b0c82042-b8f5-44ad-b413-545f732519ee",
             "Value": {
                 "id": "92f12fa6-2144-4834-bfc8-1d39d274222b",
@@ -515,6 +515,14 @@
             "Value": {
                 "id": "e322cfae-3f69-4636-aa0f-a729e6419bbc",
                 "resourcePath": "objects\/obj_battle_Hero\/obj_battle_Hero.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b6350dc5-8019-4c4d-a27e-8bec17c25174",
+            "Value": {
+                "id": "044ae97f-e45e-49a0-9e2c-66581d8ff99e",
+                "resourcePath": "objects\\obj_encounter_enemy\\obj_encounter_enemy.yy",
                 "resourceType": "GMObject"
             }
         },

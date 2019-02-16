@@ -19,20 +19,32 @@ else if(ds_grid_get(obj_grid.map_grid,x_grid,y_grid) != tile_floor)
 	//draw a red tint square and escape
 	draw_sprite_ext(Sprite_Highlight,2,x_grid*grid_size,y_grid*grid_size,1,1,0,c_white,0.4);
 }
-//always stop if there's an enemy or monster
-else if(place_meeting(x_grid*grid_size,y_grid*grid_size,obj_battle_Hero) || place_meeting(x_grid*grid_size,y_grid*grid_size,obj_battle_monster)){
+//always stop if there's an enemy
+else if(place_meeting(x_grid*grid_size,y_grid*grid_size,obj_battle_Hero) ){
 	draw_sprite_ext(Sprite_Highlight,3,x_grid*grid_size,y_grid*grid_size,1,1,0,c_white,0.4);
 }
 //if you don't have any movement left, draw as walkable (already looked for not-floor)
 else if(movement <=0)
 {
+	
+	if(place_meeting(x_grid*grid_size,y_grid*grid_size,obj_battle_monster)){
+		draw_sprite_ext(Sprite_Highlight,3,x_grid*grid_size,y_grid*grid_size,1,1,0,c_white,0.4);
+	}
+	else{
 	draw_sprite_ext(Sprite_Highlight,0,x_grid*grid_size,y_grid*grid_size,1,1,0,c_white,0.4);
+	}
 	
 }
 
 else //if you're not a wall, keep exploring!
 {
+	//see which kind of color you need to place:
+	if(place_meeting(x_grid*grid_size,y_grid*grid_size,obj_battle_monster)){
+		draw_sprite_ext(Sprite_Highlight,3,x_grid*grid_size,y_grid*grid_size,1,1,0,c_white,0.4);
+	}
+	else{
 	draw_sprite_ext(Sprite_Highlight,0,x_grid*grid_size,y_grid*grid_size,1,1,0,c_white,0.4);
+	}
 	script_execute(scr_pathfinding(x_grid-1,y_grid,movement-1));
 	script_execute(scr_pathfinding(x_grid+1,y_grid,movement-1));
 	script_execute(scr_pathfinding(x_grid,y_grid-1,movement-1));

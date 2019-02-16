@@ -31,7 +31,7 @@ mp_grid_path(obj_grid.path_grid,
 
 
 //Can the slime actually path to the point with the given speed?
-can_path = (floor(path_get_length(monster_path)/grid_size)<=monster_movement);
+can_path = (floor(path_get_length(monster_path)/grid_size)<=monster_endurance);
 
 
 //if the slime's been clicked on before and we're not clicking a wall, move the slime.
@@ -41,6 +41,7 @@ if(is_clicked==true
 	&& !clicked_on_monster){
 	if(can_path){
 		path_start(monster_path,16,path_action_stop,true);
+		monster_endurance -= floor(path_get_length(monster_path)/grid_size)
 	}
 	is_clicked = false;
 } else if(mouse_tile_x== floor(x/grid_size)
