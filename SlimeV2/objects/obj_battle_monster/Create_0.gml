@@ -19,3 +19,9 @@ monster_path = path_add();
 monster_endurance = 5;
 
 in_battle = 0;
+
+//future variable for attacking
+has_attacked = false;
+
+hp = 30;
+attack = 10;

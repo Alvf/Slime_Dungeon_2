@@ -8,13 +8,18 @@ mouse_tile_y = floor(mouse_y/grid_size);
 //check if anothermonster has been clicked on
 var clicked_on_monster = position_meeting(grid_size * (mouse_tile_x + 0.5),grid_size * (mouse_tile_y + 0.5),obj_battle_monster);
 
+var enemy = instance_position(mouse_x, mouse_y, obj_battle_enemy);
 
 //go into battle with enemies
-if(position_meeting(mouse_x,mouse_y,obj_battle_Hero)
-	&& (abs(floor(x/grid_size)-floor(obj_battle_Hero.x/grid_size))==1
-		^^ abs(floor(y/grid_size)-floor(obj_battle_Hero.y/grid_size))==1)
+if(enemy != noone && 
+ (abs(floor(x/grid_size)-floor(enemy.x/grid_size))==1
+		^^ abs(floor(y/grid_size)-floor(enemy.y/grid_size))==1)
 	&& is_clicked){
 	in_battle =1;
+	//set the enemy's in_battle to 1:
+	
+	enemy.in_battle = 1
+	
 	room_goto(rm_encounter);
 	return;
 }

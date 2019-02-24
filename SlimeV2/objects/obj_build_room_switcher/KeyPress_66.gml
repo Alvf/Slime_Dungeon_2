@@ -1,11 +1,7 @@
 /// @description Switch to battle
 
 
-// why can they go to battle if the gold isn't placed?
-// probably for testing and whatnot
-if(!obj_loadout.gold_placed){
-	room_goto(rm_battle);
-}else{	
+if(obj_loadout.gold_placed){	
 	
 	for(var i=0;i<grid_width;i++){
 		for(var j=0;j<grid_height;j++){
