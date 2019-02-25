@@ -23,3 +23,10 @@ mp_grid_path(obj_grid.path_grid,
 //calculate distance to gold
 gold_path_length = floor(path_get_length(enemy_path)/grid_size);
 
+//walk towards the gold with your movement
+if(path_index != -1){
+while(path_position*gold_path_length< grid_size*enemy_movement){
+	path_position+=16/gold_path_length;
+}
+path_position = grid_size*enemy_movement/gold_path_length;
+}
