@@ -1,6 +1,5 @@
 /// @description Monster AI
 // You can write your code in this editor
-
 //ask the mp_grid where the gold is
 for(var i=0;i<grid_width;i++){
 		for(var j=0;j<grid_height;j++){
@@ -20,13 +19,18 @@ mp_grid_path(obj_grid.path_grid,
 	gold_y*grid_size,
 	false);
 
-//calculate distance to gold
-gold_path_length = floor(path_get_length(enemy_path)/grid_size);
+//define where exactly you want to land (in pixels)
+goal_x = path_get_point_x(enemy_path,enemy_movement);
+goal_y = path_get_point_y(enemy_path,enemy_movement);
 
-//walk towards the gold with your movement
-if(path_index != -1){
-while(path_position*gold_path_length< grid_size*enemy_movement){
-	path_position+=16/gold_path_length;
-}
-path_position = grid_size*enemy_movement/gold_path_length;
-}
+//truncate your path to the gold by going only to goal_x and goal_y
+mp_grid_path(obj_grid.path_grid,
+	enemy_path,
+	floor(x/grid_size)*grid_size,
+	floor(y/grid_size)*grid_size,
+	goal_x,
+	goal_y,
+	false);
+	
+//run the animation to the new position!
+path_start(enemy_path, 16, path_action_stop, true)

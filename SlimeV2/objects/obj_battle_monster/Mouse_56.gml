@@ -9,7 +9,6 @@ mouse_tile_y = floor(mouse_y/grid_size);
 var clicked_on_monster = position_meeting(grid_size * (mouse_tile_x + 0.5),grid_size * (mouse_tile_y + 0.5),obj_battle_monster);
 
 var enemy = instance_position(mouse_x, mouse_y, obj_battle_enemy);
-
 //go into battle with enemies
 if(enemy != noone && 
  (abs(floor(x/grid_size)-floor(enemy.x/grid_size))==1
