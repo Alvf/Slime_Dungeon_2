@@ -210,6 +210,14 @@
             }
         },
         {
+            "Key": "1e3e00c2-4c93-4ae3-b632-68c7e9e3742a",
+            "Value": {
+                "id": "63334880-e9c6-42c6-87db-2271f0ab035f",
+                "resourcePath": "sprites\\spr_Hammer\\spr_Hammer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1fce81d0-9097-4bb0-86ce-6215a712cdff",
             "Value": {
                 "id": "d4799931-7d98-4c64-927f-fb4c3450e73b",
