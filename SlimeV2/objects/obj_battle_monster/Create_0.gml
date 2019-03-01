@@ -25,3 +25,8 @@ has_attacked = false;
 
 hp = 30;
 attack = 10;
+
+obj_grid.cell_x = floor(x / grid_size)
+obj_grid.cell_y = floor(y / grid_size)
+obj_grid.cell_type = ds_monster 
+update_grids 

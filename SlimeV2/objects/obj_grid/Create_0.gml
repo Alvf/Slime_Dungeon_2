@@ -2,7 +2,16 @@
 // You can write your code in this editor
 map_grid = ds_grid_create(grid_width, grid_height)
 
+// stores walls
 path_grid = mp_grid_create(-grid_size/2,
+	-grid_size/2,
+	grid_width,
+	grid_height,
+	grid_size,
+	grid_size);
+
+// stores walls and monsters!
+entity_grid = mp_grid_create(-grid_size/2,
 	-grid_size/2,
 	grid_width,
 	grid_height,
@@ -62,8 +71,9 @@ for(var i = 0;i<grid_width; i++){
 		if(ds_grid_get(map_grid,i,j)==ds_wall){
 			mp_grid_add_cell(path_grid,i,j);
 		}
-		if(position_meeting((i+.5)*grid_size,(j+.5)*grid_size,obj_battle_Hero)){
-			mp_grid_add_cell(path_grid,i,j);
+		if(ds_grid_get(map_grid,i,j) == ds_wall 
+			|| ds_grid_get(map_grid, i, j) == ds_monster){
+			mp_grid_add_cell(entity_grid,i,j);
 		}
 	}
 }

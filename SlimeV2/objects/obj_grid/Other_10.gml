@@ -21,9 +21,18 @@
 ds_grid_set(map_grid, cell_x, cell_y, cell_type);
 // show_debug_message("Setting " + string(cell_x) + ", " + string(cell_y) + " to tile " + string(cell_type));
 
+// add all walls to path_grid and entity_grid
 if(cell_type == ds_wall){
 	mp_grid_add_cell(path_grid, cell_x, cell_y)
+	mp_grid_add_cell(entity_grid, cell_x, cell_y)
+// add all not floors to entity_grid, remove from path grid
+// i.e. monsters, gold, whatnot
+} else if(cell_type != ds_floor && cell_type != ds_gold){
+	mp_grid_add_cell(entity_grid, cell_x, cell_y)
+	mp_grid_clear_cell(path_grid, cell_x, cell_y)
+// floor: remove from both
 } else {
+	mp_grid_clear_cell(entity_grid, cell_x, cell_y)
 	mp_grid_clear_cell(path_grid, cell_x, cell_y)
 }
 
