@@ -21,12 +21,12 @@ if(room == rm_battle){
 				inst.hp = ini_read_real(section, "hp", 20)
 				inst.attack = ini_read_real(section, "attack", 7)
 			}
-	
+			
 			show_debug_message("loading object at " + string(x) + ", " + string(y))
 		}
 		ini_close();
 	
-	
+		show_debug_message("starting turns");
 		with(obj_TurnController){
 			event_user(0);
 		}

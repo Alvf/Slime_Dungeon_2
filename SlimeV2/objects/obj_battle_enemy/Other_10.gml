@@ -52,7 +52,9 @@ if(mp_grid_path(obj_grid.path_grid,
 		goal_y,
 		false);
 	
-	if(goal_x == gold_x && goal_y == gold_y){
+	// show_debug_message("goal: " + string(goal_x) + ", " + string(goal_y))
+	
+	if(floor(goal_x/grid_size) == gold_x && floor(goal_y/grid_size) == gold_y){
 		show_debug_message("so the player lost...")
 		room_goto(rm_lose);
 	}
@@ -82,7 +84,10 @@ if(mp_grid_path(obj_grid.path_grid,
 		
 		// we should probably fix this in the future
 		// but 
-		
+		obj_grid.cell_x = floor(x/grid_size)
+		obj_grid.cell_y = floor(y/grid_size)
+		obj_grid.cell_type = ds_enemy
+		update_grids
 		show_debug_message("an enemy ceded its turn")
 		
 		active = 0
