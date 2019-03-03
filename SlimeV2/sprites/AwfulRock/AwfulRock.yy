@@ -2,13 +2,13 @@
     "id": "15fbf967-993f-4faa-beec-094761e25e05",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprite16",
+    "name": "AwfulRock",
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 0,
-    "bbox_left": 0,
-    "bbox_right": 0,
+    "bbox_bottom": 63,
+    "bbox_left": 2,
+    "bbox_right": 63,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
@@ -36,6 +36,28 @@
                     "LayerId": "e11ab5d0-cc64-4e8c-b519-b798245e91c0"
                 }
             ]
+        },
+        {
+            "id": "6becfa27-537e-482b-b8f3-95fc6dfbda97",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "15fbf967-993f-4faa-beec-094761e25e05",
+            "compositeImage": {
+                "id": "7fe889db-7668-4c23-a168-5c121c4d2209",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "6becfa27-537e-482b-b8f3-95fc6dfbda97",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "c9ea5400-27b2-4137-b21f-4ee523cc39a3",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "6becfa27-537e-482b-b8f3-95fc6dfbda97",
+                    "LayerId": "e11ab5d0-cc64-4e8c-b519-b798245e91c0"
+                }
+            ]
         }
     ],
     "gridX": 0,
@@ -56,7 +78,7 @@
     ],
     "origin": 0,
     "originLocked": false,
-    "playbackSpeed": 15,
+    "playbackSpeed": 30,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,

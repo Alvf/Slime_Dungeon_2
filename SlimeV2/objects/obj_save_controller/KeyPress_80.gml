@@ -9,5 +9,5 @@ if(room == rm_build){
 	}
 	var inst = instance_create_layer(grid_size*rand_x,grid_size*rand_y, 
 		"Instances", obj_build_monster);
-	inst.sprite_index = Peasant;
+	inst.sprite_index = AwfulRock;
 }
