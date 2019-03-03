@@ -1,6 +1,19 @@
-/// @description Insert description here
+/// @description Give turn to enemies
 // You can write your code in this editor
-var inst = obj_battle_monster
-with(inst){
-	inst.monster_endurance = inst.monster_movement;
+
+if(your_turn == 1){
+	your_turn = 0
+	// give the enemies their turn
+	
+	with(obj_battle_enemy){
+		enemy_movement = 5;
+	}
+	
+	event_user(0);
+	
+	with(obj_battle_monster){
+		monster_endurance = monster_movement;
+	}
 }
+
+

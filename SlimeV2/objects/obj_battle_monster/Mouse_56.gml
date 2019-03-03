@@ -1,5 +1,9 @@
 /// @description Move monster
 
+if(obj_TurnController.your_turn == 0){
+	// dont let them move out of turn!!!!!!!
+	return;
+}
 
 //What tile is the mouse on?
 mouse_tile_x = floor(mouse_x/grid_size);
@@ -8,6 +12,7 @@ mouse_tile_y = floor(mouse_y/grid_size);
 //check if anothermonster has been clicked on
 var clicked_on_monster = ds_grid_get(obj_grid.map_grid, mouse_tile_x, mouse_tile_y) == ds_monster
 //position_meeting(grid_size * (mouse_tile_x + 0.5),grid_size * (mouse_tile_y + 0.5),obj_battle_monster);
+
 
 var enemy = instance_position((mouse_tile_x + 0.5) * grid_size, (mouse_tile_y + 0.5) * grid_size, obj_battle_enemy);
 //go into battle with enemies

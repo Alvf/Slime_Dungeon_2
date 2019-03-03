@@ -25,6 +25,8 @@ if(room == rm_battle){
 		ini_write_real(section, "spr", monster.sprite_index);
 		ini_write_real(section, "in battle", monster.in_battle);
 		ini_write_real(section,"endurance",monster.monster_endurance);
+		ini_write_real(section, "hp", monster.hp)
+		ini_write_real(section, "attack", monster.attack)
 	}
 	ini_close()
 	
@@ -57,6 +59,8 @@ else if(room == rm_build){
 		ini_write_real(section, "y", floor(monster.y / grid_size) * grid_size)
 		ini_write_real(section, "spr", monster.sprite_index);
 		ini_write_real(section,"endurance",5);
+		ini_write_real(section, "hp", monster.hp)
+		ini_write_real(section, "attack", monster.attack)
 	}
 	ini_close();
 	
@@ -71,13 +75,25 @@ else if (room = rm_encounter){
 	var length = ini_read_real("meta","numMonsters",0);
 	for(var i =0;i<length;i++){
 		var section= "monster"+string(i);
+		
+		// check for the monster that was in battle
+		if(ini_read_real(section, "in battle", 0)){
+			ini_write_real(section, "hp", obj_encounter_monster.hp)
+		}
+		
 		ini_write_real(section,"in battle", 0);
 	}
 	ini_close();
 	ini_open("battle.ini");
 	var length = ini_read_real("meta", "numEnemies", 0);
 	for(var i = 0; i < length; i++){
-		ini_write_real("monster"+string(i), "in battle", 0);
+		var section = "enemy"+string(i)
+		
+		if(ini_read_real(section, "in battle", 0) == 1){
+			ini_write_real(section, "hp", obj_encounter_enemy.hp)
+		}
+		
+		ini_write_real(section, "in battle", 0);
 	}
 	ini_close();
 }

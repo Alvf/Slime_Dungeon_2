@@ -22,6 +22,8 @@ save_list = ds_list_create()
 		ini_write_real(section, "in battle", monster.in_battle);
 		show_debug_message("Monster spr " + string(monster.sprite_index));
 		ini_write_real(section, "active", monster.active);
+		ini_write_real(section, "hp", monster.hp)
+		ini_write_real(section, "attack", monster.attack)
 	}
 	ini_close();
 	

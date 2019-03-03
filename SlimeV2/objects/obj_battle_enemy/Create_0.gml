@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+stuck = false
+
 enemy_movement = 5;
 enemy_path = path_add();
 

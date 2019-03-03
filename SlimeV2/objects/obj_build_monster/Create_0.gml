@@ -21,4 +21,9 @@ obj_grid.cell_y = y_cell
 obj_grid.cell_type = ds_monster 
 update_grids*/
 
+// initialize default stats
+// TODO randomize these?
+attack = 10
+hp = 30
+
 in_battle = 0;
