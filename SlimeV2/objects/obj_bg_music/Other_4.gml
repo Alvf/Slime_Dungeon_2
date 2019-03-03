@@ -12,5 +12,8 @@ switch(room){
 	case rm_encounter:
 		audio_play_sound(snd_encounter_music, 10000, 1)
 		break;
+	case rm_lose:
+		audio_play_sound(snd_lose_music,10000,1)
+		break;
 }
 

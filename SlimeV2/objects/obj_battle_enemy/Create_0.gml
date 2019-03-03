@@ -3,7 +3,7 @@
 
 stuck = false
 
-enemy_movement = 5;
+enemy_movement = 3;
 enemy_path = path_add();
 
 in_battle = 0;

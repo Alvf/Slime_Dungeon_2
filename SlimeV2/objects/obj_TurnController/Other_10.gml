@@ -21,7 +21,7 @@ if(numberOfEnemies == 0){
 	// hooray, you killed everyone!
 	
 	// short delay to avoid bugs
-	alarm[0] = room_speed * .125
+	alarm[0] = room_speed * .5
 }
 	
 if(your_turn == 1) {

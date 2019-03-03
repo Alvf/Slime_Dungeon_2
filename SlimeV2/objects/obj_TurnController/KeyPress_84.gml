@@ -6,7 +6,7 @@ if(your_turn == 1){
 	// give the enemies their turn
 	
 	with(obj_battle_enemy){
-		enemy_movement = 5;
+		enemy_movement = 3;
 	}
 	
 	event_user(0);
