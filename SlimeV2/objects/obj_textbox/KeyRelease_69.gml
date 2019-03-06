@@ -6,4 +6,5 @@
 	} else {
 		instance_destroy();
 		room_goto(rm_build);
+		show_debug_message("going to build!")
 	}

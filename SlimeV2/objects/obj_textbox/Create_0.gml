@@ -38,7 +38,7 @@ text[7] = "I know it sounds scary, but you won’t be alone. I promise. I’m ju
 text[8] = "Now, it’s time to wake up!"
 
 page = 0
-name = "Deep Throat"
+name = "Slimer"
 
 interact_key = ord("E")
 
