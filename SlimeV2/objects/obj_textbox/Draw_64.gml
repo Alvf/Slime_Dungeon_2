@@ -15,4 +15,4 @@ draw_text_color(name_text_x, name_text_y, name, name_col, name_col, name_col, na
 
 draw_set_halign(fa_left); draw_set_valign(fa_top);
 
-draw_text_color(text_x, text_y, text, text_col, text_col, text_col, text_col, 1);
+draw_text_ext_color(text_x, text_y, text[page], text_height, text_max_width, text_col, text_col, text_col, text_col, 1);

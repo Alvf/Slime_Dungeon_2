@@ -10,6 +10,7 @@ rate = 0.2;
 vpos_w = camera_get_view_width(view_camera[0]) * 0.5;
 vpos_h = camera_get_view_height(view_camera[0]) * 0.5;
 
+/*
 width = display_get_width();
 height = display_get_height();
 if(width<=height){
@@ -17,4 +18,4 @@ if(width<=height){
 }
 else{
 	window_set_size(height,height);
-}
+}*/

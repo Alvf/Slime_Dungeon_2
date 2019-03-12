@@ -8,19 +8,13 @@ if (floor(x mod grid_size) == 0) and
 	(floor(y mod grid_size) == 0){
 	
 	// Remove player from last cell
-	obj_grid.cell_x = x_cell
-	obj_grid.cell_y = y_cell
-	obj_grid.cell_type = ds_floor 
-	update_grids
+	script_execute(scr_update_grids, x_cell, y_cell, ds_floor)
 		
 	x_cell = floor(x / grid_size);
 	y_cell = floor(y / grid_size);
 	
 	// Now mark them 
-	obj_grid.cell_x = x_cell
-	obj_grid.cell_y = y_cell
-	obj_grid.cell_type = ds_monster 
-	update_grids
+	script_execute(scr_update_grids, x_cell, y_cell, ds_monster)
 	
 	var move_x = 0, move_y = 0
 	
@@ -68,10 +62,7 @@ if(vsp > 0){
 }
 
 if(hsp != 0 || vsp != 0){
-	obj_grid.cell_x = next_x_cell
-	obj_grid.cell_y = next_y_cell
-	obj_grid.cell_type = ds_monster 
-	update_grids
+	script_execute(scr_update_grids, next_x_cell, next_y_cell, ds_monster)
 }
 
 x += hsp;

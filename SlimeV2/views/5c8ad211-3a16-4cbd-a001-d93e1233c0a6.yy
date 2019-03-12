@@ -4,9 +4,8 @@
     "mvc": "1.1",
     "name": "5c8ad211-3a16-4cbd-a001-d93e1233c0a6",
     "children": [
-        "7138d06b-7687-4da0-8834-fe650c7bbc52",
-        "b6350dc5-8019-4c4d-a27e-8bec17c25174",
-        "79f70a3e-6eac-496b-b319-6dedc27c8e7e"
+        "2431da17-04d2-4aa9-94b0-b5ced00a28c9",
+        "fd6774c2-7b31-48c0-b5a5-e5c4e21a4b38"
     ],
     "filterType": "GMObject",
     "folderName": "Encounter",

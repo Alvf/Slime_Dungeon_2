@@ -3,17 +3,31 @@
 
 stuck = false
 
-enemy_movement = 3;
+max_endurance = 3
+endurance = max_endurance;
 enemy_path = path_add();
 
 in_battle = 0;
 
-active = 1;
+active = true;
 
-hp = 20;
+max_hp = 20
+hp = max_hp
 attack = 7;
 
-obj_grid.cell_x = floor(x/grid_size)
-obj_grid.cell_y = floor(y/grid_size)
-obj_grid.cell_type = ds_enemy
-update_grids
+cell_x = floor(x/grid_size)
+cell_y = floor(y/grid_size)
+
+script_execute(scr_update_grids, floor(x/grid_size), floor(y/grid_size), ds_enemy)
+
+//ask the mp_grid where the gold is
+// TODO optimize this into the grid object
+for(var i=0;i<grid_width;i++){
+		for(var j=0;j<grid_height;j++){
+			if(ds_grid_get(obj_grid.map_grid,i,j)==ds_gold){
+				gold_x = i;
+				gold_y = j;
+				show_debug_message("enemy found gold")
+			}
+		}
+	}
