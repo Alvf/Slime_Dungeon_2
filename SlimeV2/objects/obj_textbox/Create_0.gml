@@ -8,7 +8,7 @@ frame = spr_portrait_frame;
 frame_width = sprite_get_width(frame);
 frame_height = sprite_get_height(frame);
 
-portrait = spr_portraits;
+portrait = spr_SkellyD;
 port_width = sprite_get_width(frame);
 port_height = sprite_get_height(frame);
 
