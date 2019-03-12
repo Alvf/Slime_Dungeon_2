@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "127d8ea6-95f7-47e2-9c0f-8ee0002486fc",
+            "Value": {
+                "id": "92b903df-ad1f-4b6e-bdd6-926f6ab4fec4",
+                "resourcePath": "views\\127d8ea6-95f7-47e2-9c0f-8ee0002486fc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "15140e52-dfe2-4494-a788-5a0fd1a7fabd",
             "Value": {
                 "id": "5c21fd34-ab44-4d09-9a31-37575dba7a6f",
@@ -471,6 +479,14 @@
             }
         },
         {
+            "Key": "a10e3a73-c9cf-43b4-a3a6-53edc0adb499",
+            "Value": {
+                "id": "8b73138d-d86f-47c8-8095-2e54425e2ebd",
+                "resourcePath": "views\\a10e3a73-c9cf-43b4-a3a6-53edc0adb499.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a28ae7f1-e8b4-4b67-93eb-b710a90e1597",
             "Value": {
                 "id": "5f36f43c-82ef-4784-8bd4-a5e83c90a903",
@@ -508,6 +524,14 @@
                 "id": "0f13a06f-e69f-4555-84a3-c3e054086ee6",
                 "resourcePath": "sounds\/snd_encounter_music\/snd_encounter_music.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "a9f4e61a-d6a2-4714-a1f4-57999e1f6693",
+            "Value": {
+                "id": "b8e4ec64-a955-4e04-9283-e52841b6dbe7",
+                "resourcePath": "sprites\\spr_SkellyD\\spr_SkellyD.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
