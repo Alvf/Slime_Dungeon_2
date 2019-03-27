@@ -4,8 +4,8 @@
 #macro ds_gold 3
 #macro ds_enemy 2
 
-#macro grid_width 20
-#macro grid_height 14
+#macro grid_width game_width/grid_size
+#macro grid_height game_height/grid_size
 #macro grid_size 64 
 
 
@@ -23,6 +23,6 @@
 #macro tile_wall_top 2
 #macro tile_gold 3
 
-#macro game_width 1280
+#macro game_width 1280 + 64
 #macro game_height 896
 
