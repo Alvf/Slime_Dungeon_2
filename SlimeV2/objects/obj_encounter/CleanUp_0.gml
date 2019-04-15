@@ -7,11 +7,11 @@ instance_destroy(monster_obj)
 layer_set_visible(layer_get_id("Instances"), true)
 
 if(instance_number(obj_battle_enemy) == 0){
-		room_goto(rm_build);
+		room_goto(global.level);
 }
 
 if(instance_number(obj_battle_monster) == 0){
-		room_goto(rm_build);
+		room_goto(global.level);
 }
 
 if(not obj_TurnController.your_turn){
@@ -22,10 +22,3 @@ if(not obj_TurnController.your_turn){
 	}
 
 } 
-/*else {
-	if(instance_number(obj_battle_enemy) == 0){
-		room_goto(rm_build);
-	} else {
-		show_debug_message("Nope, there are still " + string(instance_number(obj_battle_enemy)) + " monsters")
-	}
-}*/

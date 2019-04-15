@@ -41,8 +41,11 @@ if(file_exists("grid.ini")){
 						tile = tile_wall_front;
 					}
 				}
+				tilemap_set(tilemap_id, tile, i, j);
+			} else {
+				tilemap_set(tilemap_id, 0, i, j);
 			}
-			tilemap_set(tilemap_id, tile, i, j);
+			
 		}
 	}
 } else {
@@ -59,7 +62,13 @@ if(file_exists("grid.ini")){
 				case tile_floor:
 					tile = ds_floor;
 					break;
+				case tile_bedrock_front:
+				case tile_bedrock_top:
+					tile = ds_bedrock;
+					break;
 			}
+			tilemap_set(tilemap_id, 0, i, j) // actually, since its loaded from gamemaker, 
+				// it only has invisible tiles
 			ds_grid_set(map_grid, i, j, tile);
 		}
 	}
@@ -68,11 +77,12 @@ if(file_exists("grid.ini")){
 
 for(var i = 0;i<grid_width; i++){
 	for(var j=0;j<grid_height;j++){
-		if(ds_grid_get(map_grid,i,j)==ds_wall){
+		if(ds_grid_get(map_grid,i,j)==ds_wall or ds_grid_get(map_grid,i,j) == ds_bedrock){
 			mp_grid_add_cell(path_grid,i,j);
 		}
 		if(ds_grid_get(map_grid,i,j) == ds_wall 
-			|| ds_grid_get(map_grid, i, j) == ds_monster){
+			|| ds_grid_get(map_grid, i, j) == ds_monster
+			|| ds_grid_get(map_grid,i,j) == ds_bedrock){
 			mp_grid_add_cell(entity_grid,i,j);
 		}
 	}
@@ -82,3 +92,8 @@ for(var i = 0;i<grid_width; i++){
 cell_x = 0
 cell_y = 0
 cell_type = ds_wall
+
+if(room == rm_battle){
+	show_debug_message("Setting background to " + string(global.level_background))
+	layer_background_sprite(layer_background_get_id(layer_get_id("Background")), global.level_background)
+}

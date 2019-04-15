@@ -5,7 +5,7 @@ if(ds_queue_size(turn_queue) == 0){
 	show_debug_message("Its your turn now")
 	
 	if(instance_number(obj_battle_enemy) == 0){
-		room_goto(rm_build);
+		room_goto(global.level);
 	}
 	
 	for(var i = 0; i < instance_number(obj_battle_monster); i++){

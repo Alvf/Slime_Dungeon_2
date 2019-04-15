@@ -4,7 +4,7 @@ draw_set_colour(c);
 
 items[0] = ""
 items[1] = string(rock);
-items[2] = string(gold);
+// items[2] = string(gold);
 
 var i;
 for (i = 0; i < num_tiles; i+=1){

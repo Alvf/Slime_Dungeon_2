@@ -1,6 +1,6 @@
 /// @description Spawn skeletons
 // You can write your code in this editor
-if(room == rm_build){
+if(room == global.level){
 	rand_x = floor(random_range(0,512)/grid_size);
 	rand_y = floor(random_range(0,512)/grid_size);
 	while(ds_grid_get(obj_grid.map_grid,rand_x,rand_y)!=ds_floor){

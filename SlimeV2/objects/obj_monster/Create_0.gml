@@ -9,7 +9,7 @@ vsp = 0
 
 is_clicked = false
 
-max_endurance = 5
+max_endurance = 3
 endurance = max_endurance
 
 in_battle = 0
@@ -27,8 +27,8 @@ next_y_cell = y_cell
 mouse_tile_x = 0
 mouse_tile_y = 0
 
-if(room == rm_build){
-
-} else if(room == rm_battle){
+if(room == rm_battle){
 	monster_path = path_add()	
+} else {
+	sprite_index = sprite 
 }

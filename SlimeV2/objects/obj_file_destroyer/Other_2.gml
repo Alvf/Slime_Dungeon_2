@@ -8,3 +8,6 @@ file_delete("resources.ini")
 
 
 global.turn_data = -1
+
+// Fix VSYNC
+display_reset(0, true);

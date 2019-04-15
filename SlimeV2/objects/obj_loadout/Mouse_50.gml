@@ -18,16 +18,6 @@ if(obj_mouse_controller.mouse_in_valid_pos){
 			rock++;
 			script_execute(scr_update_grids, mx_cell, my_cell, ds_floor)
 			audio_play_sound(choose(snd_break1, snd_break2), 10, false)
-		}else if(m_cell == ds_gold){
-			gold++;
-			script_execute(scr_update_grids, mx_cell, my_cell, ds_floor)
-			gold_placed = false;
 		}
-	}else if (current_tool == tool_gold) {
-		if(gold > 0 && m_cell == ds_floor){
-			gold--;
-			script_execute(scr_update_grids, mx_cell, my_cell, ds_gold)
-			gold_placed = true;
-		}	
 	}
 }
