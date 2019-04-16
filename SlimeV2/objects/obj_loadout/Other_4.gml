@@ -7,6 +7,5 @@
 		current_tool = ini_read_real("resources", "tool", tool_break)
 		ini_close()
 	}else {
-		rock = 16
 		current_tool = tool_break
 	}

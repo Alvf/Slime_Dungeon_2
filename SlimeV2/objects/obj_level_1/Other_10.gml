@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 /// @description Spawn monsters
 
 with(instance_create_layer(64, 64, "Instances", obj_build_monster)){

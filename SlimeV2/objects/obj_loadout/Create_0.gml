@@ -7,5 +7,5 @@ num_tiles = 2;
 
 items = [];
 
-rock = 16
+
 current_tool = tool_break

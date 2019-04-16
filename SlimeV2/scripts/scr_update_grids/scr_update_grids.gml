@@ -38,7 +38,7 @@ if(object_exists(obj_grid) && ds_exists(obj_grid.map_grid, ds_type_grid)){
 			}
 	
 		} else if(cell_type == ds_floor) {
-			//tilemap_set(tilemap_id, tile_floor, cell_x, cell_y);
+			tilemap_set(tilemap_id, 0, cell_x, cell_y);
 			if(cell_y - 1 >= 0 && ds_grid_get(map_grid, cell_x, cell_y - 1) == ds_wall){
 				tilemap_set(tilemap_id, tile_wall_front, cell_x, cell_y - 1);
 			}
