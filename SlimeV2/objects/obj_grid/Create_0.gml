@@ -36,9 +36,9 @@ if(file_exists("grid.ini")){
 				if (j < grid_height-1){
 					var tile_below = ds_grid_get(map_grid, i, j+1);
 					if(tile_below == ds_wall){
-						tile = tile_wall_top;
+						tile = tile_wall_S;
 					} else {
-						tile = tile_wall_front;
+						tile = tile_wall_N;
 					}
 				}
 				tilemap_set(tilemap_id, tile, i, j);
@@ -53,10 +53,10 @@ if(file_exists("grid.ini")){
 	for(var i = 0; i < grid_width; i++){
 		for(var j = 0; j < grid_height; j++){
 			var tile = tilemap_get(tilemap_id, i, j);
-			//if(tile == tile_wall_front || tile_wall_top) {tile = ds_wall};
+			//if(tile == tile_wall_N || tile_wall_S) {tile = ds_wall};
 			switch(tile){
-				case tile_wall_front:
-				case tile_wall_top:
+				case tile_wall_N:
+				case tile_wall_S:
 					tile = ds_wall;
 					break;
 				case tile_floor:

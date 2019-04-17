@@ -19,8 +19,24 @@
 
 
 #macro tile_floor 1
-#macro tile_wall_front 4 
-#macro tile_wall_top 2
+#macro tile_wall_N 10
+#macro tile_wall_S 2
+#macro tile_wall_E 4
+#macro tile_wall_EW 5
+#macro tile_wall_NE 6
+#macro tile_wall_NS 7
+#macro tile_wall_NW 8
+#macro tile_wall_ES 9
+#macro tile_wall_SW 13
+#macro tile_wall_W 14
+#macro tile_wall 15
+#macro tile_wall_NEW 16
+#macro tile_wall_ESW 17
+#macro tile_wall_NESW 18
+#macro tile_wall_NES 19
+#macro tile_wall_NSW 20
+
+
 #macro tile_gold 3
 #macro tile_bedrock_top 5
 #macro tile_bedrock_front 6

@@ -24,23 +24,24 @@ if(object_exists(obj_grid) && ds_exists(obj_grid.map_grid, ds_type_grid)){
 			mp_grid_clear_cell(path_grid, cell_x, cell_y)
 		}
 
+//smart graphics; update wall graphic type to make things look cool
 		if(cell_type == ds_wall){	
 			// check tile below
 			if(cell_y + 1 < grid_height && ds_grid_get(map_grid, cell_x, cell_y + 1) == ds_wall){
-				tilemap_set(tilemap_id, tile_wall_top, cell_x, cell_y)
+				tilemap_set(tilemap_id, tile_wall_S, cell_x, cell_y)
 			} else {
-				tilemap_set(tilemap_id, tile_wall_front, cell_x, cell_y)
+				tilemap_set(tilemap_id, tile_wall_N, cell_x, cell_y)
 			}
 	
 			// check tile above
 			if(cell_y - 1 >= 0 && ds_grid_get(map_grid, cell_x, cell_y - 1) == ds_wall){
-				tilemap_set(tilemap_id, tile_wall_top, cell_x, cell_y - 1)
+				tilemap_set(tilemap_id, tile_wall_S, cell_x, cell_y - 1)
 			}
 	
 		} else if(cell_type == ds_floor) {
 			tilemap_set(tilemap_id, 0, cell_x, cell_y);
 			if(cell_y - 1 >= 0 && ds_grid_get(map_grid, cell_x, cell_y - 1) == ds_wall){
-				tilemap_set(tilemap_id, tile_wall_front, cell_x, cell_y - 1);
+				tilemap_set(tilemap_id, tile_wall_N, cell_x, cell_y - 1);
 			}
 		} else if (cell_type == ds_gold){
 			//tilemap_set(tilemap_id, tile_gold, cell_x, cell_y);
