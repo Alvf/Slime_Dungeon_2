@@ -18,7 +18,7 @@
 #macro tool_break 1
 
 
-#macro tile_floor 1
+#macro tile_floor 21
 #macro tile_wall_N 10
 #macro tile_wall_S 2
 #macro tile_wall_E 4
