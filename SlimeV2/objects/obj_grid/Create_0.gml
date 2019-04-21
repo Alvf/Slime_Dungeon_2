@@ -33,19 +33,19 @@ if(file_exists("grid.ini")){
 		for (var j = 0; j < grid_height; j++) {
 			var tile = ds_grid_get(map_grid, i, j);
 			if (tile == ds_wall){
-				if (j < grid_height-1){
+				/*if (j < grid_height-1){
 					var tile_below = ds_grid_get(map_grid, i, j+1);
 					if(tile_below == ds_wall){
 						tile = tile_wall_S;
 					} else {
 						tile = tile_wall_N;
 					}
-				}
+				}*/
 				tilemap_set(tilemap_id, tile, i, j);
 			} else {
 				tilemap_set(tilemap_id, 0, i, j);
 			}
-			
+			scr_update_tile_neighbors(i,j)
 		}
 	}
 } else {

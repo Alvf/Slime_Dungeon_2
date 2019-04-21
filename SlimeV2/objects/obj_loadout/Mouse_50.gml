@@ -11,12 +11,14 @@ if(obj_mouse_controller.mouse_in_valid_pos){
 
 	if(current_tool == tool_wall && rock > 0 && m_cell == ds_floor){
 		script_execute(scr_update_grids, mx_cell, my_cell, ds_wall)
+		scr_update_tile_neighbors(mx_cell, my_cell);
 		rock--;
 		audio_play_sound(choose(snd_build1, snd_build2), 10, false)
 	}else if (current_tool == tool_break) {
 		if(m_cell == ds_wall){
 			rock++;
 			script_execute(scr_update_grids, mx_cell, my_cell, ds_floor)
+			scr_update_tile_neighbors(mx_cell, my_cell);
 			audio_play_sound(choose(snd_break1, snd_break2), 10, false)
 		}
 	}
