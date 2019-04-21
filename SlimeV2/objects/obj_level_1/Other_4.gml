@@ -33,5 +33,15 @@ if(room == rm_battle){
 				inst.hp = 15;
 			}
 			break;
+		
+	}
+} else if (room == rm_level_select) {
+	// save level here
+	instance_destroy();
+	
+} else if (room == rm_level_1){
+	if(wave_number >= 2){
+		alarm[0] = room_speed * 0.5;
+		//instance_destroy();
 	}
 }
