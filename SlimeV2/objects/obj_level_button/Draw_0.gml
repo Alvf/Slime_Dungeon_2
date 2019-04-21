@@ -2,4 +2,4 @@
 // You can write your code in this editor
 draw_self();
 
-draw_text(x,y,level_string);
+draw_text(x+30,y+5,level_string);
