@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "20d36511-7d4f-4302-9143-f7565fc5d00b",
+            "Value": {
+                "id": "41484a84-b31d-4079-8e68-93e1047b7866",
+                "resourcePath": "objects\\obj_Turn_Advance_Button\\obj_Turn_Advance_Button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "20eb0590-d7df-4922-b82f-26be80423567",
             "Value": {
                 "id": "acc1c86f-bc1d-4646-bdab-d1b96f790b24",
@@ -447,6 +455,14 @@
             }
         },
         {
+            "Key": "76da8486-13db-4bef-a9f6-4c641ec88cbb",
+            "Value": {
+                "id": "d1b461c0-3ee8-4d25-8512-a148b6a70c38",
+                "resourcePath": "views\\76da8486-13db-4bef-a9f6-4c641ec88cbb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "79774fc5-b8e6-4184-b016-8850492fe7cc",
             "Value": {
                 "id": "604258b0-9a20-4870-a56d-33a669d70cd4",
@@ -484,6 +500,14 @@
                 "id": "0716e34e-dbb0-44e6-9c67-4e9ded4a6d9d",
                 "resourcePath": "objects\/obj_highlight_battle\/obj_highlight_battle.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8f78e1d2-424c-4369-96d2-67d62c4cf4dd",
+            "Value": {
+                "id": "cded1581-8014-4b49-9887-4fa613645ccf",
+                "resourcePath": "sprites\\spr_Battle_Button\\spr_Battle_Button.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -548,6 +572,14 @@
                 "id": "661cfadd-6ec1-4d3f-a8a1-8f48bdf5e2a5",
                 "resourcePath": "views\/a64f6420-5d4b-4791-bc6c-0d78e948064d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a7b8cdef-7aec-4517-b6ae-48dd0c360dbc",
+            "Value": {
+                "id": "c17734e7-398d-40ad-824e-f50535ad2b7a",
+                "resourcePath": "objects\\obj_Go_To_Battle_Button\\obj_Go_To_Battle_Button.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -759,6 +791,14 @@
             }
         },
         {
+            "Key": "d97a3ea6-0647-43a9-8142-3c02437be29c",
+            "Value": {
+                "id": "a768835b-5731-4ee5-a0fb-f6265b625a72",
+                "resourcePath": "sprites\\spr_Turn_Button\\spr_Turn_Button.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dccd039c-8c4b-4282-8073-af53e31a6510",
             "Value": {
                 "id": "095d8558-e777-4fec-9c14-0c63850fd360",
@@ -780,6 +820,14 @@
                 "id": "4cbf107e-6f1e-4b07-b05d-6bac68793dc4",
                 "resourcePath": "sounds\/snd_lose_music\/snd_lose_music.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "e80f675e-426f-4faa-aa47-4a74bb298f3b",
+            "Value": {
+                "id": "e242dc34-2096-4b43-aced-b236e8f8008c",
+                "resourcePath": "views\\e80f675e-426f-4faa-aa47-4a74bb298f3b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
