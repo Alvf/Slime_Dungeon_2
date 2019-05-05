@@ -5,6 +5,6 @@
 		page++;
 	} else {
 		instance_destroy();
-		room_goto(rm_build);
+		room_goto(rm_level_1);
 		show_debug_message("going to build!")
 	}

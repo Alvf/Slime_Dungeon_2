@@ -2,11 +2,8 @@
 // You can write your code in this editor
 box = spr_textbox;
 box_width = sprite_get_width(box);
-box_height = sprite_get_height(box);
 
 frame = spr_portrait_frame;
-frame_width = sprite_get_width(frame);
-frame_height = sprite_get_height(frame);
 
 portrait = spr_SkellyD;
 port_width = sprite_get_width(frame);
@@ -40,7 +37,6 @@ text[8] = "Now, it’s time to wake up!"
 page = 0
 name = "Slimer"
 
-interact_key = ord("E")
 
 text_col = c_black;
 name_col = c_black;

@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "1e120252-e5aa-47c1-9174-c2918ad70c9a",
+            "Value": {
+                "id": "8f30db3d-34d1-4f43-97f4-317deba6ff53",
+                "resourcePath": "sprites\\StarSprite\\StarSprite.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e3e00c2-4c93-4ae3-b632-68c7e9e3742a",
             "Value": {
                 "id": "63334880-e9c6-42c6-87db-2271f0ab035f",
@@ -356,6 +364,14 @@
                 "id": "92cf6cad-eba4-41d0-91ff-ece8ab7b0d8d",
                 "resourcePath": "objects\/obj_bg_music\/obj_bg_music.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "567cd4a6-1e96-4e6f-abba-682f127fc3c0",
+            "Value": {
+                "id": "45fbdec0-309e-4fcd-9e8f-6885edbf2bdc",
+                "resourcePath": "views\\567cd4a6-1e96-4e6f-abba-682f127fc3c0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
