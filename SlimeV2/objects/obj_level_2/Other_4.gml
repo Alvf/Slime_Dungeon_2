@@ -6,31 +6,42 @@ if(room == rm_battle){
 	switch(wave_number){
 		case 1:
 		
-			var inst = instance_create_layer(19 * grid_size, 5 * grid_size , "Instances", obj_battle_enemy);
+			var inst = instance_create_layer(20 * grid_size, 7 * grid_size , "Instances", obj_battle_enemy);
 			with(inst){
 				inst.sprite_index = Peasant
-				inst.max_endurance = 2;
+				inst.max_endurance = 3;
 				inst.endurance = inst.max_endurance;
 			
-				inst.attack = 3;
+				inst.attack = 5;
 			
 				inst.max_hp = 10;
 				inst.hp = 10;
 			}
-			break;
-		
-		case 2:
-			var inst = instance_create_layer(19 * grid_size, 5 * grid_size, "Instances", obj_battle_enemy);
+			var inst = instance_create_layer(20 * grid_size, 6 * grid_size , "Instances", obj_battle_enemy);
 			with(inst){
-				inst.sprite_index = spr_Hammer;
-			
+				inst.sprite_index = spr_Hammer
 				inst.max_endurance = 7;
-				inst.endurance = 7;
+				inst.endurance = inst.max_endurance;
 			
-				inst.attack = 2;
+				inst.attack = 3;
 			
 				inst.max_hp = 15;
 				inst.hp = 15;
+			}
+			break;
+		
+		case 2:
+			var inst = instance_create_layer(20 * grid_size, 6 * grid_size, "Instances", obj_battle_enemy);
+			with(inst){
+				inst.sprite_index = spr_Hammer;
+			
+				inst.max_endurance = 4;
+				inst.endurance = 4;
+			
+				inst.attack = 5;
+			
+				inst.max_hp = 20;
+				inst.hp = 20;
 			}
 			break;
 		
