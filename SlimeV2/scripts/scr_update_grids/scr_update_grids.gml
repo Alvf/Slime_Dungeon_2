@@ -7,6 +7,8 @@ var cell_x = argument0
 var cell_y = argument1
 var cell_type = argument2
 
+if(cell_type == ds_bedrock) return;
+
 if(!variable_global_exists("wall_map")){
 	global.wall_map = ds_map_create();
 	

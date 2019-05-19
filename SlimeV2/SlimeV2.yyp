@@ -103,14 +103,6 @@
             }
         },
         {
-            "Key": "16f68b01-b995-45d8-9f2a-ecaffff67b25",
-            "Value": {
-                "id": "66b818fc-e780-4399-9a95-f9a060797d45",
-                "resourcePath": "rooms\/rm_level_2\/rm_level_2.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "1715995c-8d1e-4f7f-b54e-7618fa9b11fe",
             "Value": {
                 "id": "8b4758da-31df-4772-a810-cf996e98fee0",
@@ -527,6 +519,14 @@
             }
         },
         {
+            "Key": "882fd0e4-e613-4bf3-8b6a-1c04f6ed216f",
+            "Value": {
+                "id": "6f7bf533-c0d6-4bd2-a419-3f24d45866b9",
+                "resourcePath": "objects\\obj_level_2\\obj_level_2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8dfca010-0b52-40bd-a262-8828e70071c5",
             "Value": {
                 "id": "7481e25f-79ff-4145-8311-160a97a7d267",
@@ -751,6 +751,14 @@
             }
         },
         {
+            "Key": "beadb6a2-cd78-4386-a635-91c80a1f41df",
+            "Value": {
+                "id": "51c56225-4fa2-4c3c-9524-5fbcd31fa7cb",
+                "resourcePath": "sprites\\Level_2\\Level_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c04345a9-7852-4ca1-8484-92151d78507f",
             "Value": {
                 "id": "f4932d70-0a46-49c1-818f-df01ffaedbdb",
@@ -783,11 +791,11 @@
             }
         },
         {
-            "Key": "cc94bc65-07f9-4b91-a261-bb3fddd5663e",
+            "Key": "ca7b6861-20f8-4905-8c9d-ae91f018e9be",
             "Value": {
-                "id": "fe301590-d68d-4f35-9f36-23b5317a90d2",
-                "resourcePath": "objects\/obj_level_2\/obj_level_2.yy",
-                "resourceType": "GMObject"
+                "id": "304c3ddf-20a9-4f7e-b1d5-44b412381881",
+                "resourcePath": "rooms\\rm_level_2\\rm_level_2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -852,6 +860,14 @@
                 "id": "095d8558-e777-4fec-9c14-0c63850fd360",
                 "resourcePath": "sounds\/snd_build1\/snd_build1.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "deb0a74a-d97e-411f-b772-1ee9b56e4388",
+            "Value": {
+                "id": "1f88b6a9-4493-4c8f-b0ec-2ba387fc95c1",
+                "resourcePath": "sprites\\spr_VAMPIES\\spr_VAMPIES.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -25,18 +25,15 @@ name_y = box_y - name_height;
 
 portrait_index = 0;
 
-text[0] = "It’s a beautiful day to be you!"
-text[1] = "You’ve been having weird dreams--what’s your name?"
-text[2] = "Good morning, Blue! Today’s your birthday."
-text[3] = "You are five wiggles old!"
-text[4] = "The fifth wiggling day of a slime is a very important day!"
-text[5] = "It’s the day you’re kicked out of your home dungeon."
-text[6] = "Don’t be sad! This means you’ll be able to strike out on your own and found your own dungeon!"
-text[7] = "I know it sounds scary, but you won’t be alone. I promise. I’m just a figment of your imagination, but I promise, real monsters can be just as nice. Everyone is not your parents."
-text[8] = "Now, it’s time to wake up!"
-
+text[0] = "Good morning."
+text[1] = "Your name is Numerus Humerus Bludsucka and you are a vampire."
+text[2] = "You are a creature of the night, mysterious and powerful,"
+text[3] = "but you are also quite broke."
+text[4] = "Blood is expensive, and that sun-screen you use to make sure you don’t die in the bright light sure isn’t cheap either!"
+text[5] = "To make a bit of cash on the side, today you’ve decided to become a Dungeon Boss."
+text[6] = "Humans keep trying to vanquish you anyway; might as well make a profit from it!"
 page = 0
-name = "Slimer"
+name = "Vamp"
 
 
 text_col = c_black;
